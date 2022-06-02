@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+/* Variáveis e configurações gerais */
+
+:root {
+    --cor-texto1: #000000; /* Texto principal */
+    --cor-texto2: #ffffff; /* Texto secundario ou complementar */
+    --cor-hover: #d9dce9;
+    --cor-fundo: #ffffff;
+    --cor-destaque: #F26101; /* #ED5829 */
+    --cor-menu: #0599f5;
+}
+
+/* Estilo na tela SOBRE NOS */
+
+.about main section {
+    padding: 0;
+}
+
+.about .sobre img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+}
+
+.about .quem {
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.about .quem div {
+    margin: auto 0;
+}
+
+.about .quem h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.about .quem img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.about .somos {
+    max-width: 1000px;
+    margin: 50px auto 10px;
+    padding: 10px;
+}
+
+.about .somos h2 {
+    color: #302828;
+    font-size: 25px;
+}
+
+.about .somos * {
+    text-align: justify;
+}
+
+.about .somos p span {
+    color: var(--cor-destaque);
+    font-weight: bold;
+}
+
+.about .somos a {
+    display: flex;
+    width: 250px;
+    height: 50px;
+    margin: 30px auto 20px;
+    font-weight: bold;
+    color: var(--cor-menu);
+    background-color: transparent;
+    border: 1px solid var(--cor-menu);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease-in-out;
+}
+
+.about .somos a:hover {
+    color: var(--cor-texto2);
+    background-color: var(--cor-menu);
+}
+
+.about .codigo {
+    max-width: 1200px;
+    margin: 0 auto 20px;
+}
+
+.about .codigo div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .codigo div p {
+    text-align: justify;
+    padding: 10px;
+}
+
+.about .codigo div div {
+    flex-direction: column;
+    width: 33%;
+}
+
+.about .codigo div div h2 {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .about .quem {
+        flex-direction: column;
+    }
+
+    .about .quem img {
+        width: 100%;
+    }
+    
+    .about .codigo img {
+        display: none;
+    }
+
+    .about .codigo div {
+        flex-direction: column;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .about .codigo div div {
+        width: fit-content;
+        margin-bottom: 20px;
+    }
+
+    .about .codigo div div h2 {
+        display: flex;
+        justify-content: center;
+    }
+}

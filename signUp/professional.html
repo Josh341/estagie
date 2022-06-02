@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+    <title>Estagie | Para profissionais</title>
+</head>
+<body>
+    <div class="cad_user">
+        <header>
+            <div class="company">
+                <a href="/home/index.html"><img class="icon" src="/assets/images/logo.png" alt="Logo"></a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="/home/index.html">Início</a></li>
+                    <li><a href="/signIn/login.html">Entre!</a></li>
+                    <li><a href="/signUp/modality.html" style="color: #000000;">Cadastre-se!</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="sec_form_cad">
+                <form class="form_cad" style="width: 50vw;">
+                    <h1>Faça parte do nosso time!</h1>
+
+                    <fieldset>
+                        <div class="formulario">
+                            <input type="text" id="nameInput" name="nome" minlength="1" autofocus required>
+                            <label for="nameInput">Nome Completo</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="formulario">
+                            <input type="cpf" id="cpfInput" name="cpf" minlength="11" maxlength="14" required>
+                            <label for="cpfInput">CPF</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="formulario">
+                            <input type="email" id="emailInput" name="email" minlength="1" required>
+                            <label for="emailInput">Email</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="formulario">
+                            <input type="password" id="passwordInput" name="password" minlength="1" required>
+                            <label for="passwordInput">Senha</label>
+                        </div>
+                        <div class="formulario">
+                            <input type="password" id="confirmPasswordInput" name="password" minlength="1" required>
+                            <label for="confirmPasswordInput"> Repita sua senha</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <div id="check">
+                            <input type="checkbox" name="accept" id="accept" required>
+                            <label for="accept">Aceitar os <a href="../terms/contract.html">termos de
+                                    uso</a></label>
+                        </div>
+                        <button type="button" onclick="signUpUser()">Cadastrar!</button>
+                    </fieldset>
+                    <label class="rights">Você representa uma empresa? Então <a
+                            href="../signUp/company.html">cadastre-se como
+                            empregador</a>!</label>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div class="opcoes">
+                <ul>
+                    <li><p>A Estagie</p></li>
+                    <li><a href="/aboutus/about.html">Quem somos?</a></li>
+                    <li><a href="/itworks/itworks.html">Como funciona?</a></li>
+                    <li><a href="/questions/questions.html">Perguntas frequentes</a></li>
+                    <li><a href="/terms/contract.html">Termos de uso</a></li>
+                </ul>
+                <ul>
+                    <li><p>Para empresas</p></li>
+                    <li><a href="/signUp/company.html">Cadastro para empresas</a></li>
+                    <li><a href="/plans/companyplans.html">Planos para empresas</a></li>
+                </ul>
+                <ul>
+                    <li><p>Para profissionais</p></li>
+                    <li><a href="/signUp/professional.html">Cadastro de profissionais</a></li>
+                    <li><a href="/plans/professionalplans.html">Planos para profissionais</a></li>
+                </ul>
+                <ul>
+                    <li><p>Idioma</p></li>
+                    <li><div id="google_translate_element"></div></li>
+                </ul>
+            </div>
+            <div class="infos">
+                <h3>&copy; 2022 Estagie. Todos os direitos reservados.</h3>
+                <div class="redes" style="justify-content: center;">
+                    <a href="https://twitter.com/e_stagie" target="_blank"><img class="logo" src="/assets/images/logo_twitter.webp" alt="Twitter"></a>
+                    <a href="https://www.instagram.com/e.estagie/" target="_blank"><img class="logo" src="/assets/images/logo_instagram.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/Eestagie/" target="_blank"><img class="logo" src="/assets/images/logo_facebook.webp" alt="Facebook"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../signUp/signUp.js"></script>
+    <script src="../repositories/repository.js"></script>
+    <script src="../shared/validator.js"></script>
+    <script src="/assets/js/tradutor.js"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

@@ -1,0 +1,528 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url("formulario.css");
+@import url("company.css");
+@import url("search.css");
+@import url("plans.css");
+@import url("about.css");
+@import url("itworks.css");
+@import url("questions.css");
+
+
+/* Variáveis e configurações gerais */
+
+:root {
+    --cor-texto1: #000000;
+    /* Texto principal */
+    --cor-texto2: #ffffff;
+    /* Texto secundario ou complementar */
+    --cor-hover: #d9dce9;
+    --cor-fundo: #ffffff;
+    --cor-destaque: #F26101;
+    /* #ED5829 */
+    --cor-menu: #0599f5;
+}
+
+::selection {
+    color: #ffffff;
+    background-color: #328FFE;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    font-family: "Poppins", "Montserrat", Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    /* IMPORTANTE */
+    z-index: 0;
+    text-decoration: none;
+    list-style: none;
+    overflow-y: 0;
+}
+
+#selectArea {
+    display: block;
+    margin: 10px;
+    width: 140%;
+    height: 50px;
+    border: none;
+    background-color: #ededed;
+    border-radius: 6px;
+    color: #333333;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 14px 10px 10px 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: #e9e8e8;        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--cor-menu);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #e9e8e8;  /* creates padding around scroll thumb */
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    border-radius: 6px;
+}
+
+mark {
+    text-decoration: none;
+    background-color: var(--cor-fundo);
+    font: normal normal 48px Niconne, hand;
+    color: var(--cor-destaque);
+}
+
+p {
+    text-indent: 1.5em;
+    text-align: justify;
+    margin: 15px 0px;
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+a {
+    text-align: center;
+}
+
+/* Classes globais */
+
+.titulo,
+.titulo>* {
+    font: normal normal 48px 'Ubuntu', 'Poppins', Times, serif;
+    text-align: left;
+}
+
+.logo {
+    width: 50px;
+    border-radius: 50%;
+}
+
+#coursesSectionLink {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#firstDivDetach input {
+    text-align: center;
+    margin: 0 10% 1% 8%;
+    padding: 0px 10px;
+    width: 80%;
+}
+#secondDivDetach input{
+    text-align: center;
+    margin: 0 10% 1% 8%;
+    padding: 0px 10px;
+    width: 80%;
+}
+
+#coursesSection {
+    margin: 10px;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background-color: #504f4f;
+
+}
+
+embed {
+    margin: 30px;
+    width: 45%;
+    height: 340px;
+}
+
+.t2 {
+    color: var(--cor-hover) !important;
+}
+
+/* Definições complementares */
+
+.goog-te-banner-frame {
+    display: none !important;
+}
+
+body {
+    position: relative;
+    top: 0 !important;
+}
+
+#back-to-top {
+    bottom: 50px;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+
+    color: var(--cor-texto1);
+    background-color: var(--cor-fundo);
+    font-weight: bolder;
+    font-size: 24px;
+    cursor: pointer;
+    position: fixed;
+    border: 1px solid var(--cor-texto1);
+    border-radius: 6px;
+    opacity: 1;
+}
+
+/* Configurações no header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+
+    background-color: var(--cor-menu);
+}
+
+.company>* {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon {
+    width: 200px;
+}
+
+.nome {
+    color: var(--cor-texto2);
+}
+
+header nav {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    margin: 0px 20px;
+}
+
+.menu li {
+    margin: 20px;
+}
+
+.menu li a {
+    color: var(--cor-texto2);
+}
+
+.menu li a:hover {
+    color: var(--cor-hover);
+}
+
+header #check,
+header .checkbtn {
+    display: none;
+}
+
+/* Configurações no main */
+
+main section {
+    min-width: 100%;
+    padding: 5% 0 5%;
+}
+
+main img {
+    width: 400px;
+    height: 266px;
+}
+
+main .container {
+    max-width: 75%;
+    display: flex;
+    margin: 0 auto 50px;
+    align-items: center;
+}
+
+main .apres {
+    margin: 0px 30px;
+}
+
+main .s2 .apres {
+    padding: 15px;
+    border-radius: 30px;
+    background-color: var(--cor-menu);
+}
+
+main .s2 .apres h1 {
+    color: var(--cor-destaque);
+}
+
+main .s2 .apres p {
+    color: var(--cor-texto2);
+}
+
+.div_btn_h {
+    display: flex;
+    justify-content: space-around;
+    gap: 0 10px;
+}
+
+.btn {
+    padding: 5px 10px;
+    font-size: 16px;
+    color: var(--cor-destaque);
+    background-color: var(--cor-fundo);
+    border: 1px solid var(--cor-destaque);
+    border-radius: 30px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: var(--cor-fundo);
+    background-color: var(--cor-destaque);
+}
+
+main .s1,
+.s3 {
+    background-color: var(--cor-fundo);
+}
+
+main .s3 .apres {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 50px;
+}
+
+/* Configurações no FOOTER */
+
+footer {
+    background-color: #000000;
+    padding: 10px 20px;
+}
+
+footer .opcoes {
+    width: fit-content;
+    display: flex;
+    gap: 0 30px;
+}
+
+footer .opcoes li {
+    margin: 15px 0;
+}
+
+footer .opcoes li a {
+    color: var(--cor-menu);
+}
+
+footer .opcoes li a:hover {
+    text-decoration: underline;
+}
+
+footer h3,
+footer p {
+    font-weight: normal;
+    text-indent: 0;
+    color: var(--cor-texto2);
+}
+
+footer .infos {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .redes a {
+    margin: 0 5px;
+}
+
+/* Página dashboard */
+
+#details {
+    width: 980px;
+    text-align: center;
+    color: #5b5b5b;
+}
+
+/* PÁGINA DE ESCOLHA */
+
+.tipocad main .redirect {
+    width: 400px;
+    margin: 30px auto;
+    border: 1px solid var(--cor-texto1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.tipocad main .redirect div p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.tipocad main .redirect div img {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto 0;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+}
+
+.tipocad main .redirect div {
+    margin: 10px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tipocad main .redirect div a {
+    margin-bottom: 30px;
+}
+
+.tipocad main div {
+    border: none;
+}
+
+/* PÁGINA DE DIREITOS */
+
+.rights,
+.rights>* {
+    font-size: 14px;
+    text-indent: 2em;
+    text-align: justify;
+}
+
+.rights>a {
+    text-decoration: none;
+}
+
+.termos {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* Responsividade */
+
+@media (max-width: 1200px) {
+    main .s2 {
+        background-color: #9c8e8e;
+    }
+
+    main .container {
+        display: block;
+        width: 75vw;
+    }
+
+    main .container .apres {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    main .container img {
+        margin: 30px 0;
+    }
+
+    main .div_img {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1100px) {
+    .video {
+        display: none;
+    }
+
+    footer .opcoes {
+        display: block;
+    }
+
+    footer ul {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    footer .infos {
+        padding: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: left;
+        gap: 20px 0;
+    }
+
+    header .checkbtn {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .principal > * {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 580px) {
+    header nav ul li * {
+        font-size: 14px;
+    }
+
+    main img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .cad_user main form .nome,
+    .cad_comp main form .nome {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 430px) {
+    main img {
+        width: 200px;
+        height: 133px;
+    }
+
+    .principal>* {
+        font-size: 12px;
+    }
+
+    .principal h1,
+    .principal mark {
+        font: normal normal 30px 'Times New Roman', Times, serif !important;
+    }
+}

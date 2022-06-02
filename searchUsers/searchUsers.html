@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+    <title>Estagie | Busca</title>
+</head>
+<body>
+    <div class="search">
+        <header>
+            <div class="company">
+                <a href="/home/index.html"><img class="icon" src="/assets/images/logo.png" alt="Logo"></a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="/home/index.html">Início</a></li>
+                    <li><a href="/signIn/login.html">Deslogar</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="pesquisa">
+                <div class="sec_filtros">
+                    <button id="showfiltros">&DownArrow;</button>
+                    <ul class="filtros">
+                        <li>Programadores
+                        <ul class="opc_filtro">
+                            <li>Programadores Web</li>
+                            <li>Programadores Frontend</li>
+                            <li>Programadores Backend</li>
+                            <li>Programadores Mobile</li>
+                            <li>Programadores FullStack</li>
+                        </ul></li>
+                        <li>Designers</li>
+                    </ul>
+                </div>
+                <div class="users">
+                        <div id="allProfiles" class="profile">
+                        </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="opcoes">
+                <ul>
+                    <li>
+                        <p>A Estagie</p>
+                    </li>
+                    <li><a href="/aboutus/about.html">Quem somos?</a></li>
+                    <li><a href="/itworks/itworks.html">Como funciona?</a></li>
+                    <li><a href="/questions/questions.html">Perguntas frequentes</a></li>
+                    <li><a href="/terms/contract.html">Termos de uso</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>Para empresas</p>
+                    </li>
+                    <li><a href="/signUp/company.html">Cadastro para empresas</a></li>
+                    <li><a href="/plans/companyplans.html">Planos para empresas</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>Para profissionais</p>
+                    </li>
+                    <li><a href="/signUp/professional.html">Cadastro de profissionais</a></li>
+                    <li><a href="/plans/professionalplans.html">Planos para profissionais</a></li>
+                </ul>
+                <ul>
+                    <li><p>Idioma</p></li>
+                    <li><div id="google_translate_element"></div></li>
+                </ul>
+            </div>
+            <div class="infos">
+                <h3>&copy; 2022 Estagie. Todos os direitos reservados.</h3>
+                <div class="redes" style="justify-content: center;">
+                    <a href="https://twitter.com/e_stagie" target="_blank"><img class="logo" src="/assets/images/logo_twitter.webp" alt="Twitter"></a>
+                    <a href="https://www.instagram.com/e.estagie/" target="_blank"><img class="logo" src="/assets/images/logo_instagram.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/Eestagie/" target="_blank"><img class="logo" src="/assets/images/logo_facebook.webp" alt="Facebook"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../repositories/repository.js"></script>
+    <script src="../shared/validator.js"></script>
+    <script src="../searchUsers/searchUsers.js"></script>
+    <script src="/assets/js/tradutor.js"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

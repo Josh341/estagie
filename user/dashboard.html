@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+    <title>Estagie | Profissional</title>
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <div class="company">
+                <a href="/home/index.html"><img class="icon" src="/assets/images/logo.png" alt="Logo"></a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="/home/index.html">Início</a></li>
+                    <li><a href="/signIn/login.html">Deslogar</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="dados-emp">
+                <section class="empresa">
+                    <div>
+                        <div id="divImage">
+                            <img class="img-usuario" id="userPfp">
+                        </div>
+                        <div id="userInfo" class="nome-setor quaseNaoDeu">
+
+                            <h1 id="userName"></h1>
+
+                            <h3 id="slogan"></h3>
+
+                            <h3 id="userEmail"></h3>
+
+                            <h3 id="phone"></h3>
+                            
+                            <h3 id="userArea"></h3>
+                            
+                        </div>
+                    </div>
+                    <img id="plan"></img>
+                </section>
+
+                <div id="butao"><button id="editButton" onclick="editInfos()">Editar Perfil</button>
+                    <button>Editar currículo</button>
+                </div>
+
+                <section class="analise">
+                    <h3>Análise (Últimos 30 dias)</h3>
+                    <div class="resultados">
+                        <div class="info">
+                            <h4>Visitantes</h4>
+                            <p id="visitors"></p>
+                        </div>
+                        <div class="info seg">
+                            <h4>Seguidores</h4>
+                            <div>
+                                <p id="#seguidores">82</p>
+                                <p id="novos">+7</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h4>Deploys</h4>
+                            <p>12</p>
+                        </div>
+                        <div class="info">
+                            <h4>Mensagens recebidas</h4>
+                            <p>1</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="sobre">
+                    <h3>Minha história</h3>
+                    <div id="moreUserInfo" class="sobre-dados quaseNaoDeu">
+                        <h1 id="details"></h1>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="opcoes">
+                <ul>
+                    <li>
+                        <p>A Estagie</p>
+                    </li>
+                    <li><a href="/aboutus/about.html">Quem somos?</a></li>
+                    <li><a href="/itworks/itworks.html">Como funciona?</a></li>
+                    <li><a href="/questions/questions.html">Perguntas frequentes</a></li>
+                    <li><a href="/terms/contract.html">Termos de uso</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>Para profissionais</p>
+                    </li>
+                    <li><a href="/signUp/professional.html">Cadastro de profissionais</a></li>
+                    <li><a href="#" onclick="seeUserPlans(); event.preventDefault()">Planos para profissionais</a></li>
+                </ul>
+                <ul>
+                    <li><p>Idioma</p></li>
+                    <li><div id="google_translate_element"></div></li>
+                </ul>
+            </div>
+            <div class="infos">
+                <h3>&copy; 2022 Estagie. Todos os direitos reservados.</h3>
+                <div class="redes" style="justify-content: center;">
+                    <a href="https://twitter.com/e_stagie" target="_blank"><img class="logo" src="/assets/images/logo_twitter.webp" alt="Twitter"></a>
+                    <a href="https://www.instagram.com/e.estagie/" target="_blank"><img class="logo" src="/assets/images/logo_instagram.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/Eestagie/" target="_blank"><img class="logo" src="/assets/images/logo_facebook.webp" alt="Facebook"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../repositories/repository.js"></script>
+    <script src="../shared/validator.js"></script>
+    <script src="../user/userService.js"></script>
+    <script src="/assets/js/tradutor.js"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

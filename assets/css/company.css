@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+/* Variáveis e configurações gerais */
+
+:root {
+    --cor-texto1: #000000; /* Texto principal */
+    --cor-texto2: #ffffff; /* Texto secundario ou complementar */
+    --cor-hover: #d9dce9;
+    --cor-fundo: #ffffff;
+    --cor-destaque: #F26101; /* #ED5829 */
+    --cor-menu: #0599f5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+textarea {
+    background-color: var(--cor-fundo);
+}
+
+textarea:disabled {
+    color: var(--cor-texto1);
+}
+
+/* Estilo na tela da companhia */
+
+.dados-emp {
+    padding: 30px;
+}
+
+.dados-emp textarea {
+    resize: none;
+}
+
+.dashboard .empresa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.dashboard .empresa div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.dashboard .empresa img {
+    width: 280px;
+    height: 280px;
+    border-radius: 10%;
+}
+
+
+.dashboard .empresa div .nome-setor {
+    display: block;
+    gap: 0;
+    text-transform: uppercase;
+}
+
+.dashboard .empresa div .nome-setor h1 {
+    font-size: 32px;
+}
+
+.dashboard .empresa div .nome-setor h3 {
+    font-size: 24px;
+    color: #5b5b5b;
+}
+
+/* ### */
+
+/* ### */
+
+.dashboard .empresa h2 {
+    padding: 30px;
+    border-radius: 10px;
+    color: var(--cor-texto2);
+    background-color: #FFD700;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.dashboard .empresa #c1 {
+    background-color: #c0c0c0;
+}
+
+.dashboard .analise {
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.dashboard .analise > h3 {
+    margin-bottom: 20px;
+}
+
+.resultados {
+    display: flex;
+    gap: 0 30px;
+}
+
+.resultados * {
+    text-indent: 0;
+}
+
+.resultados .seg > * {
+    display: flex;
+    gap: 0 10px;
+}
+
+.resultados .seg #novos {
+    color: var(--cor-menu);
+    font-size: 0.75em;
+    font-weight: bold;
+}
+
+/* Estilo da sessão sobre */
+
+.dados-emp .sobre .sobre-dados {
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.dados-emp .sobre #sobre {
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.dados-emp .sobre h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.dados-emp .sobre .contato {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0 0;
+}
+
+.dados-emp .sobre .contato div textarea {
+    padding: 0 10px;
+}

@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+:root {
+    --cor-texto1: #000000; /* Texto principal */
+    --cor-texto2: #ffffff; /* Texto secundario ou complementar */
+    --cor-hover: #d9dce9;
+    --cor-fundo: #ffffff;
+    --cor-destaque: #F26101; /* #ED5829 */
+    --cor-menu: #0599f5;
+}
+
+.search main .pesquisa {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 20px;
+}
+
+.search main .pesquisa .sec_filtros ul li {
+    position: relative;
+}
+
+.search main .pesquisa .sec_filtros ul li:hover {
+    color: crimson;
+}
+
+.search main .pesquisa .sec_filtros ul ul {
+    position: absolute;
+    display: none;
+}
+
+.search main .pesquisa .sec_filtros ul li:hover > ul {
+    top: 0;
+    left: 98%;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Área dos profissionais */
+
+.search main .pesquisa .users {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+
+.search main .pesquisa .users .profile {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 30px auto;
+}
+
+.search main .pesquisa .users .profile a {
+    margin: 8px 0;
+    padding: 0.4px;
+    display: flex;
+    border-radius: 8px;
+    border-bottom: 2px solid var(--cor-texto1);
+    border-left: 2px solid var(--cor-texto1);
+    gap: 10px;
+}
+
+.search main .pesquisa .users .profile a img {
+    width: 140px;
+    height: 140px;
+}
+
+.search main .pesquisa .users .profile a div {
+    display: block;
+    border: none;
+}
+
+.search main .pesquisa .users .profile a div > * {
+    color: var(--cor-texto1);
+}
+
+.search main .pesquisa .users .profile a div h3 {
+    font-size: 42px;
+    text-align: start;
+}
+
+.search main .pesquisa .users .profile a div h4 {
+    font-size: 26px;
+    text-align: start;
+}
+

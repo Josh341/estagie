@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+:root {
+    --cor-texto1: #000000; /* Texto principal */
+    --cor-texto2: #ffffff; /* Texto secundario ou complementar */
+    --cor-hover: #d9dce9;
+    --cor-fundo: #ffffff;
+    --cor-destaque: #F26101; /* #ED5829 */
+    --cor-menu: #0599f5;
+}
+
+.page_plans main section h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.page_plans main section .plans {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.page_plans main section .plans .plan {
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--cor-hover);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--cor-hover);
+    gap: 20px 0;
+    transition: .5s ease;
+}
+
+.page_plans main section .plans .p2,
+.page_plans main section .plans .pp {
+    position: relative;
+}
+
+.page_plans main section .plans .p2 .valor,
+.page_plans main section .plans .pp .valor {
+    color: var(--cor-destaque) !important;
+}
+
+.page_plans main section .plans .p2 button,
+.page_plans main section .plans .pp button {
+    background-color: var(--cor-destaque) !important;
+}
+
+.page_plans main section .plans .p2::before {
+    content: "MAIS POPULAR!";
+    top: -20px;
+    left: -1px;
+    width: calc(100% + 1px);
+    position: absolute;
+    color: var(--cor-texto2);
+    background-color: var(--cor-texto1);
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 10px var(--cor-hover);
+    text-align: center;
+}
+
+.page_plans main section .plans .pp::before {
+    content: "RECOMENDADO";
+    top: -20px;
+    left: -1px;
+    width: calc(100% + 1px);
+    position: absolute;
+    color: var(--cor-texto2);
+    background-color: var(--cor-texto1);
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 10px var(--cor-hover);
+    text-align: center;
+}
+
+.page_plans main section .plans .plan:hover {
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.page_plans main section .plans .plan * {
+    text-indent: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.page_plans main section .plans .plan h2 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.page_plans main section .plans .plan .valor {
+    color: var(--cor-menu);
+    font-weight: bolder;
+}
+
+.page_plans main section .plans .plan .valor span {
+    font-size: 10px;
+}
+
+.page_plans main section .plans .plan .info {
+    font-size: 12px;
+}
+
+.page_plans main section .plans .plan button {
+    width: max-content;
+    margin: 0 auto;
+    padding: 10px 30px;
+    color: var(--cor-texto2);
+    background-color: var(--cor-menu);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.page_plans main section .plans .plan ul * {
+    font-size: 16px;
+}
+
+.page_plans main section .plans .plan ul li::before {
+    content: "✓ ";
+    font-weight: bolder;
+    color: var(--cor-menu);
+}
+
+.page_plans main section .plans .plan ul .not::before {
+    content: "X " !important;
+    font-weight: bolder;
+    color: #bb1c1c;
+}
+
+.page_plans main section .plans .p2 ul li::before,
+.page_plans main section .plans .pp ul li::before {
+    color: var(--cor-destaque);
+}
+
+@media (max-width: 800px){
+    .page_plans main section h1 {
+        margin: 20px;
+    }
+
+    .page_plans main section .plans {
+        padding: 10px 0;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .page_plans main section .plans .p2,
+    .page_plans main section .plans .pp {
+        margin: 60px 0 40px;
+    }
+}
